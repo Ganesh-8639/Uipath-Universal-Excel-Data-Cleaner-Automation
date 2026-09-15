@@ -1,0 +1,145 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="493.20000000000005,1399.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="484.8,1376" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="dtInput" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange AddHeaders="True" DataTable="[dtInput]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="451.2,226.4" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1:K10101" SheetName="Sheet1" WorkbookPath="Input\Excel_Data_Cleaning_Input_10000.xlsx" />
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="' ============================================================&#xA;' UNIVERSAL EXCEL CLEANER&#xA;' ============================================================&#xA;&#xA;' 1. Clean column headers&#xA;For Each col As DataColumn In dt.Columns&#xA;&#xA;    Dim header As String = col.ColumnName.Trim()&#xA;&#xA;    header = System.Text.RegularExpressions.Regex.Replace(&#xA;        header, &quot;\s+&quot;, &quot; &quot;)&#xA;&#xA;    col.ColumnName = header&#xA;&#xA;Next&#xA;&#xA;&#xA;' 2. Clean every cell&#xA;For Each row As DataRow In dt.Rows&#xA;&#xA;    For Each col As DataColumn In dt.Columns&#xA;&#xA;        If Not row.IsNull(col) Then&#xA;&#xA;            Dim value As String = row(col).ToString().Trim()&#xA;&#xA;            value = System.Text.RegularExpressions.Regex.Replace(&#xA;                value, &quot;\s+&quot;, &quot; &quot;)&#xA;&#xA;            row(col) = value&#xA;&#xA;        End If&#xA;&#xA;    Next&#xA;&#xA;Next&#xA;&#xA;&#xA;' 3. Remove rows containing ANY empty cell&#xA;Dim rowsToDelete As New List(Of DataRow)&#xA;&#xA;For Each row As DataRow In dt.Rows&#xA;&#xA;    Dim hasEmptyCell As Boolean = False&#xA;&#xA;    For Each col As DataColumn In dt.Columns&#xA;&#xA;        If row.IsNull(col) OrElse&#xA;           String.IsNullOrWhiteSpace(row(col).ToString()) Then&#xA;&#xA;            hasEmptyCell = True&#xA;            Exit For&#xA;&#xA;        End If&#xA;&#xA;    Next&#xA;&#xA;    If hasEmptyCell Then&#xA;        rowsToDelete.Add(row)&#xA;    End If&#xA;&#xA;Next&#xA;&#xA;&#xA;For Each row As DataRow In rowsToDelete&#xA;    dt.Rows.Remove(row)&#xA;Next&#xA;&#xA;dt.AcceptChanges()&#xA;&#xA;&#xA;' 4. Remove completely empty columns&#xA;Dim columnsToDelete As New List(Of DataColumn)&#xA;&#xA;For Each col As DataColumn In dt.Columns&#xA;&#xA;    Dim isEmptyColumn As Boolean = True&#xA;&#xA;    For Each row As DataRow In dt.Rows&#xA;&#xA;        If Not row.IsNull(col) AndAlso&#xA;           Not String.IsNullOrWhiteSpace(row(col).ToString()) Then&#xA;&#xA;            isEmptyColumn = False&#xA;            Exit For&#xA;&#xA;        End If&#xA;&#xA;    Next&#xA;&#xA;    If isEmptyColumn Then&#xA;        columnsToDelete.Add(col)&#xA;    End If&#xA;&#xA;Next&#xA;&#xA;&#xA;For Each col As DataColumn In columnsToDelete&#xA;    dt.Columns.Remove(col)&#xA;Next&#xA;&#xA;&#xA;' 5. Standardize common values&#xA;For Each row As DataRow In dt.Rows&#xA;&#xA;    For Each col As DataColumn In dt.Columns&#xA;&#xA;        If Not row.IsNull(col) Then&#xA;&#xA;            Dim value As String = row(col).ToString().Trim()&#xA;&#xA;            Select Case value.ToLower()&#xA;&#xA;                Case &quot;active&quot;&#xA;                    row(col) = &quot;Active&quot;&#xA;&#xA;                Case &quot;inactive&quot;&#xA;                    row(col) = &quot;Inactive&quot;&#xA;&#xA;                Case &quot;pending&quot;&#xA;                    row(col) = &quot;Pending&quot;&#xA;&#xA;                Case &quot;yes&quot;&#xA;                    row(col) = &quot;Yes&quot;&#xA;&#xA;                Case &quot;no&quot;&#xA;                    row(col) = &quot;No&quot;&#xA;&#xA;                Case &quot;true&quot;&#xA;                    row(col) = &quot;True&quot;&#xA;&#xA;                Case &quot;false&quot;&#xA;                    row(col) = &quot;False&quot;&#xA;&#xA;            End Select&#xA;&#xA;        End If&#xA;&#xA;    Next&#xA;&#xA;Next&#xA;&#xA;&#xA;' 6. Remove duplicate rows&#xA;If dt.Rows.Count &gt; 0 Then&#xA;&#xA;    Dim uniqueTable As DataTable =&#xA;        dt.DefaultView.ToTable(True)&#xA;&#xA;    dt.Clear()&#xA;&#xA;    For Each row As DataRow In uniqueTable.Rows&#xA;        dt.ImportRow(row)&#xA;    Next&#xA;&#xA;End If&#xA;&#xA;dt.AcceptChanges()" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="451.2,400.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+        <ui:InvokeCode.Arguments>
+          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dt">[dtInput]</InOutArgument>
+        </ui:InvokeCode.Arguments>
+      </ui:InvokeCode>
+      <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="sd:DataTable">[dtInput]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sd:DataTable">[dtInput.DefaultView.ToTable(True)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="451.2,491.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Output\Universal_Excel_Data_Cleaned.xlsx">
+        <ueab:ExcelApplicationCard.Body>
+          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="416,212" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dtInput]" />
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelApplicationCard.Body>
+      </ueab:ExcelApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

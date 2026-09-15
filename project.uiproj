@@ -1,0 +1,6 @@
+{
+  "Name": "Universal_Excel_Data_Cleaner",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}
